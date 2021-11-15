@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- signup -->
+        <div class="login-page" style="margin-top: -80px;">
+      <div class="form">
+        <div class="login">
+          <div class="login-header">
+            <h3>Signup</h3>
+            <p>Please enter your credentials to Create an Account</p>
+          </div>
+        </div>
+         <form id="login-form" action="login.html" onsubmit= "return validate()">
+          <div>
+          <label for="email" name="email">Email</label>
+          <input type="text" placeholder="email" id="email" required />
+          <label for="error" id="error1"></label>
+          </div>
+          <div>
+          <label for="number" name="number">Phone number</label>
+          <input type="tel" placeholder="number" id="number" required />
+          <label for="error" id="error2"></label>
+          </div>
+          <div>
+          <label for="password" name="password">Password</label>
+          <input type="password" onclick="checkpassword()"  placeholder="password" id="password1" required />
+          <label for="error" id="error3"></label>
+          </div>
+          <div>
+          <label for="conpwd" name="conpwd">Confirm Password</label>
+          <input type="password" placeholder="Confirm your Password" id="password2" required />
+          <label for="error" id="error4"></label>
+          </div>
+          <!-- <div class="valid-feedback"> -->
+            <!-- <small></small> -->
+        <!-- </div> -->
+          <button id="submit">login</button>
+          
+        </form>
+      </div>
+    </div>
+     <!--signup end -->
+     <script src="signup.js"></script>
+</body>
+</html>
